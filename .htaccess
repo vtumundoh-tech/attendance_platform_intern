@@ -1,0 +1,14 @@
+RewriteEngine On
+Options +FollowSymLinks -MultiViews
+
+RewriteBase /valendy_presensi/
+
+# Redirect .php ke clean URL, hanya untuk GET request
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Internal rewrite clean URL ke .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ $1.php [L,QSA]

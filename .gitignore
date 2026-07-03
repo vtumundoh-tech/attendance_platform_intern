@@ -1,0 +1,24 @@
+# Environment
+.env
+.env.*
+
+# Dependencies
+node_modules/
+vendor/
+
+# Firebase Service Account
+secrets/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
