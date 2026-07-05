@@ -1,6 +1,24 @@
-# Environment
+# ================================
+# Environment & Kredensial Sensitif
+# ================================
 .env
 .env.*
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+.env.backup
+*.env
+
+# Konfigurasi database (jika berisi kredensial)
+config/database.php
+
+# Fonnte token helper / fallback
+config/fonnte_helper.php
+
+# Firebase client config / service worker
+firebase-messaging-sw.js
 
 # Dependencies
 node_modules/
@@ -10,6 +28,7 @@ vendor/
 secrets/
 
 # Logs
+logs/
 *.log
 
 # OS
