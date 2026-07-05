@@ -1,6 +1,1 @@
-Login
-User : pradana (admin)
-Pass : 123456
-
-User : 062030701635 (mahasiswa)
-Pass : 123456
+Sistem presensi yang memanfaatkan geolocation untuk melakukan validasi terhadap lokasi peserta magang apakah berada dalam radius lokasi atau tidak sebelum melakukan presensi, serta fonnte untuk mengirimkan notifikasi pengingat
